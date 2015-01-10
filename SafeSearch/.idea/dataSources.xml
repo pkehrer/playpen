@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1370824813">
+    <data-source source="LOCAL" name="Rails SafeSearch: development" uuid="2dd87055-d4d7-4831-88ee-bf57848fa452">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\pkehrer\Projects\SafeSearch\db\development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SafeSearch: test" uuid="18edcf29-9291-4358-bb93-df9062db994a">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:db/test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails SafeSearch: production" uuid="9e79d082-c015-4577-b119-ca32ae814138">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:my_production_database</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

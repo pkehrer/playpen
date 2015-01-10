@@ -1,0 +1,31 @@
+<h1>Safe Search</h1>
+
+
+<%= form_tag("/search/query", method: "get") do %>
+    <%= text_field_tag(:query) %>
+    <%= submit_tag("Search") %>
+<% end %>
+<br/>
+<br/>
+
+<% if not @error.nil? %>
+    <div style="color:red">
+      <%= @error %>
+    </div>
+<% elsif not @results.nil? %>
+    <% @results.each do |r| %>
+        <div>
+            <h2><%= r[:title].html_safe %></h2>
+            <a href="<%= r[:link].html_safe %>"><%= r[:link].html_safe %></a>
+            <blockquote>
+              <%= r[:description].html_safe %>
+            </blockquote>
+        </div>
+    <% end %>
+    <a href="/search/query?page=<%= @page-1 %>&query=<%= @query %>">Previous</a>
+    <a href="/search/query?page=<%= @page+1 %>&query=<%= @query %>">Next</a>
+<% else %>
+    <div>
+      <%= @raw %>
+    </div>
+<% end %>

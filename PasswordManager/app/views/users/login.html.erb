@@ -1,0 +1,9 @@
+<%= form_for @user, url: {action: "authenticate"} do |f| %>
+    <div class="form-group" style="width:200px">
+    <%= f.label "username" %>
+    <%= f.text_field :username, class: "form-control" %><br/>
+    <%= f.label "password" %>
+    <%= f.password_field :password, class: "form-control" %><br/>
+    <%= f.submit "Login", class: "btn btn-default" %>
+    </div>
+<% end %>

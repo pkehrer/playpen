@@ -1,0 +1,16 @@
+<h1>Passwords#index</h1>
+
+<table class="table table-hover">
+  <tr>
+  <th>Name</th>
+  <th>Password</th>
+  <th>Notes</th>
+  </tr>
+<% @passes.each do |pass| %>
+      <tr>
+        <td><%= pass.name %></td>
+        <td><%= pass.password %></td>
+        <td><%= pass.notes %></td>
+      </tr>
+<% end %>
+</table>

@@ -1,0 +1,9 @@
+<%= form_for @pass, url: {action: "create"} do |f| %>
+    <%= f.label "Name" %>
+    <%= f.text_field "name" %><br/>
+    <%= f.label "Password" %>
+    <%= f.text_field "password" %><br/>
+    <%= f.label "Notes" %>
+    <%= f.text_area "notes" %>
+    <%= f.submit "Create" %>
+<% end %>
